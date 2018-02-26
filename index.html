@@ -1,673 +1,1818 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=gbk"></meta></head><body><style>
-          html,body,div,p{margin:0;padding:0}
-          body{font-size:14px;font-family:"microsoft yahei";background-color:#ffffff}
-          table{border-collapse:collapse;border-spacing:0;table-layout:fixed}
-          th,td{font-size:14px;padding:0}
-          a{text-decoration:none}
-          img{border:0 none}
-          .blue{text-decoration:none;color:#3c3d5d}
-          .chead{width:1002px}
-          .chead .logo{width:698px;height:90px}
-          .chead .txt{width:152px;height:90px}
-          .column{width:1002px;line-height:28px;border:1px solid #dedede}
-          .column .hbox{width:185px;height:154px}
-          .column .head{display:block;background-color:#fafafa}
-          .column .box{width:100%;background-color:#ffffff;border-top:2px solid #f2f3f5}
-          .column .box1{width:100%;word-wrap:break-word;color:#ffffff;background-color:#3f4160}
-          .column .box2{width:100%;background-color:#f8f9fa}
-          .column .tba{width:940px;padding:0 30px 15px}
-          .column .tbb{width:940px;padding:0 30px}
-          .column .tb1{width:900px;line-height:28px;color:#333333;word-break:break-all;padding:0 20px}
-          .column .tb2{width:430px;padding:0 20px}
-          .column .tb3{width:900px;padding:15px 20px 15px 0}
-          .column .gray,.column .gray2{color:#999999;word-break:break-all}
-          .column .gray2{color:#666666}
-          .column .plate1,.column .plate2{width:430px;height:54px;font-size:16px;font-weight:bold;color:#818ba3}
-          .column .plate1{width:900px;padding:0 50px}
-          .column .plate1 .f16{font-size:14px;font-weight:normal;color:#333333}
-          .column .plate1 .f12{font-size:12px;font-weight:normal;color:#999999}
-          .column .keys,.column .keys2{width:85px;line-height:28px;color:#666666}
-          .column .keys2{width:110px}
-          .column .txt1,.column .txt2,.column .txt3{width:815px;line-height:28px;color:#333333;word-break:break-all}
-          .column .txt2{width:345px}
-          .column .txt3{width:auto;max-width:815px;font-size:14px;font-weight:bold}
-          .column .txt4{width:305px;color:#ffffff;word-break:break-all}
-          .column .infr{width:767px;color:#ffffff;table-layout:auto}
-          .column .vam,.column .grcha{vertical-align:middle;margin-left:5px}
-          .column .box1 .vam{margin-right:5px;margin-left:0}
-          .column .name{font-size:24px;padding-bottom:18px}
-          .column .icard{color:#a1a3ae;padding-bottom:18px}
-          .column .con{border-top:1px dotted #ddd}
-          .column .pr20{width:225px;padding-right:20px}
-          .column .time{width:120px;line-height:28px;color:#666666;padding-left:20px}
-          .column .rtbox{width:765px;line-height:28px;color:#333333;padding:0 20px 0 15px;word-break:break-all}
-          .column .hai,.column .guan{line-height:18px;font-size:12px;color:#ffffff;vertical-align:text-top;margin-left:5px;padding:1px 3px;background-color:#3cbe7f;border-radius:2px}
-          .column .guan{background-color:#ff9f20}
-          .column .tag{display:inline-block;word-break:break-all;#display:inline;#zoom:1}
-          .column .all{color:#666;padding:10px 20px;background-color:#fafafa}
-          .column .tit{width:900px;height:40px;color:#666666;padding:0 20px;background-color:#f5f5f5}
-          .column .p15{padding:15px 0}
-          .column .p5{display:inline-block;color:#666666;padding:0 5px;#display:inline;#zoom:1}
-          .column .cell .skill{width:165px;text-align:right;padding-right:15px}
-          .column .cell .skbg,.column .cell .skco{display:inline-block;width:245px;height:18px;line-height:18px;font-size:12px;color:#ffffff;vertical-align:top;margin-top:6px;background-color:#dddddd;border-radius:20px;#display:inline;#zoom:1}
-          .column .cell .skco{width:235px;font-style:normal;margin-top:0;padding-left:10px;background-color:#ff9f20;z-index:3}
-          .column .sl .skco{width:173px}
-          .column .lh .skco{width:112px}
-          .column .yb .skco{width:51px}
-          .column .fbox strong{font-size:14px;font-weight:bold}
-          .column .cha{font-size:12px;font-weight:normal;color:#00457d;margin-left:5px}
-          .column .cha:hover{color:#ff6000}
-          .column .email{width:330px}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk"></meta>
+</head>
+<body>
+<style>
+    html, body, div, p {
+        margin: 0;
+        padding: 0
+    }
 
-          .eng td,.eng .txt3,.eng .fbox strong{font-size:13px;font-family:'Arial'}
-          .eng .txt1,.eng .rtbox,.eng .phd{width:775px;font-size:13px;font-family:'Arial';line-height:28px}
-          .eng .txt2{width:305px}
-          .eng .txt4{width:245px}
-          .eng .cell .txt3{width:120px}
-          .eng .time,.eng .keys{width:110px;font-size:13px;text-align:right}
-          .eng .cell .skill{width:130px}
-          .eng .phd{padding-left:145px}
-          .eng .keys{padding-right:15px}
-          .eng .pr20{width:205px}
-          .eng .pr20 .keys{width:100px}
-          .eng .email{width:270px}
-        </style><table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column"><tbody><tr><td valign="top"><table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box1"><tbody><tr>
-<td class="hbox" align="middle"><img src="http://i.51job.com/resume/ajax/image.php?type=avatar&amp;userid=27055839&amp;key=9327c4d8b9d277cfdbd34c4d8a09a6f1" width="85" height="104" class="head" alt="Í·Ïñ"></td>
-<td><table cellspacing="0" cellpadding="0" border="0" class="infr"><tbody>
-<tr>
-<td colspan="2" class="name">½­ÀîÃ÷</td>
-<td align="right" class="icard">
-                    ID:27055839</td>
-</tr>
-<tr>
-<td valign="top">
-<img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y1.png" width="20" height="20">ÎÒÄ¿Ç°²»Ïë»»¹¤×÷</td>
-<td valign="top">
-<img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y2.png" width="20" height="20">17721308697</td>
-<td valign="top"><table cellspacing="0" cellpadding="0" border="0" class="email"><tbody><tr>
-<td valign="top" width="25"><img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y3.png" width="20" height="20"></td>
-<td valign="top" class="txt4">leeming-jiang@163.com</td>
-</tr></tbody></table></td>
-</tr>
-<tr><td valign="top" colspan="3"><p><img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y4.png" width="20" height="20">ÄÐ<span class="p5">|</span>34 Ëê (1983/07/06)<span class="p5">|</span>ÏÖ¾Ó×¡ÉÏº£-ËÉ½­Çø<span class="p5">|</span>10Äê¹¤×÷¾­Ñé
-                    </p></td></tr>
-</tbody></table></td>
-</tr></tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box2"><tbody><tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="tb2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt2"></td>
-</tr></thead>
-<tbody>
-<tr><td colspan="2" class="plate2">×î½ü¹¤×÷</td></tr>
-<tr>
-<td valign="top" class="keys">Ö°Î»£º</td>
-<td valign="top" class="txt2">¸ß¼¶Èí¼þ¹¤³ÌÊ¦</td>
-</tr>
-<tr>
-<td valign="top" class="keys">¹«Ë¾£º</td>
-<td valign="top" class="txt2">ÎÖÄÉ¹ú¼ÊÎïÁ÷£¨ÉÏº££©ÓÐÏÞ¹«Ë¾</td>
-</tr>
-<tr>
-<td valign="top" class="keys">ÐÐÒµ£º</td>
-<td valign="top" class="txt2">½»Í¨/ÔËÊä/ÎïÁ÷</td>
-</tr>
-</tbody>
-</table></td>
-<td valign="top" class="tb2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt2"></td>
-</tr></thead>
-<tbody>
-<tr><td colspan="2" class="plate2">×î¸ßÑ§Àú/Ñ§Î»</td></tr>
-<tr>
-<td valign="top" class="keys">×¨Òµ£º</td>
-<td valign="top" class="txt2">¼ÆËã»ú¿ÆÑ§Óë¼¼Êõ</td>
-</tr>
-<tr>
-<td valign="top" class="keys">Ñ§Ð££º</td>
-<td valign="top" class="txt2">¶«»ª´óÑ§</td>
-</tr>
-<tr>
-<td valign="top" class="keys">Ñ§Àú/Ñ§Î»£º</td>
-<td valign="top" class="txt2">±¾¿Æ</td>
-</tr>
-</tbody>
-</table></td>
-</tr></tbody></table></td></tr></tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">¸öÈËÐÅÏ¢</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">Î¢ÐÅºÅ£º
-                                  </td>
-<td valign="top" class="txt2">42897269</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">»§¿Ú/¹ú¼®£º</td>
-<td valign="top" class="txt2">°²»ÕÊ¡</td>
-</tr></tbody></table></td>
-</tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">»éÒö×´¿ö£º</td>
-<td valign="top" class="txt2">ÒÑ»é</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top">&nbsp;</td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt1"></td>
-</tr></thead>
-<tbody><tr>
-<td valign="top" class="keys">¸öÈËÖ÷Ò³£º</td>
-<td valign="top" class="txt1">https://github.com/bluecitymoon</td>
-</tr></tbody>
-</table></td></tr>
-</tbody></table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody><tr><td class="plate1">
-              Ä¿Ç°ÄêÊÕÈë
-              <span>&nbsp;34ÍòÔª</span><span class="f12">£¨°üº¬»ù±¾¹¤×Ê¡¢²¹Ìù¡¢½±½ð¡¢¹ÉÈ¨ÊÕÒæµÈ£©</span>
-</td></tr></tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">ÇóÖ°ÒâÏò</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt1"></td>
-</tr></thead>
-<tbody><tr>
-<td valign="top" class="keys">¸öÈË±êÇ©£º</td>
-<td valign="top" class="txt1">
-<span class="tag">Java&nbsp;&nbsp;</span><span class="tag">Swift&nbsp;&nbsp;</span><span class="tag">HTML5&nbsp;&nbsp;</span><span class="tag">Restful</span>
-</td>
-</tr></tbody>
-</table></td></tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÆÚÍûÐ½×Ê£º</td>
-<td valign="top" class="txt2">30000-39999
-                                            Ôª/ÔÂ
-                                          </td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">µØµã£º</td>
-<td valign="top" class="txt2"><span class="tag">ÉÏº£</span></td>
-</tr></tbody></table></td>
-</tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">Ö°ÄÜ/Ö°Î»£º</td>
-<td valign="top" class="txt2"><span class="tag">Èí¼þ¹¤³ÌÊ¦</span></td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÐÐÒµ£º</td>
-<td valign="top" class="txt2"><span class="tag">¼ÆËã»úÈí¼þ</span></td>
-</tr></tbody></table></td>
-</tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">µ½¸ÚÊ±¼ä£º</td>
-<td valign="top" class="txt2">1¸öÔÂÄÚ</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÀàÐÍ£º</td>
-<td valign="top" class="txt2">È«Ö°</td>
-</tr></tbody></table></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt1"></td>
-</tr></thead>
-<tbody><tr>
-<td valign="top" class="keys">×ÔÎÒÆÀ¼Û£º</td>
-<td valign="top" class="txt1">¾ÅÄêÏîÄ¿¾­Ñé£¬ÊìÁ·Java£¬Swift´úÂë±àÐ´ÄÜÁ¦£¬¿É¶ÀÁ¢»òÕß´øÁìÍÅ¶ÓÍê³Éºó¶ËÏµÍ³¿ª·¢£¬web¶Ë¿ª·¢»òÊÇiOS&#x20;app¿ª·¢¡£Á÷ÀûÓ¢Óï¿ÚÓïÄÜÁ¦£¬ÊìÏ¤Spring¼°¶àÖÖ×é¼þ(Spring&#x20;mvc,&#x20;Spring&#x20;boot,&#x20;Spring&#x20;oauth2,&#x20;Spring&#x20;Jpa&#x20;dataµÈ)£¬Hibernate£¬Struts,&#x20;EJB¡£ÊìÏ¤HTML5£¬AngularJS¡£ÁË½âIonic,&#x20;Cordova,&#x20;Objective-C.&#x20;ÊìÏ¤Oracle£¬DB2£¬MySQL£¬ÓÐÒøÐÐ¡¢µçÐÅ¡¢ÎïÁ÷ºÍ±£ÏÕÐÐÒµÏîÄ¿¿ª·¢¾­Ñé¡£¶ÔÐÂ¼¼Êõ±¥ÓÐ³ÖÐøµÄÈÈÇé£¬²¢ÓÐ¿ìËÙÑ§Ï°µÄÄÜÁ¦¡£Github:&#x20;https://github.com/bluecitymoon&#x20;&#x20;Coding.Net:&#x20;https://coding.net/u/bluecitymoon</td>
-</tr></tbody>
-</table></td></tr>
-</tbody></table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">¹¤×÷¾­Ñé</td></tr>
-<tr><td class="tbb"><table cellspacing="0" cellpadding="0" border="0">
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2015/10-ÖÁ½ñ</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">¸ß¼¶Èí¼þ¹¤³ÌÊ¦</strong><span class="p5">|</span><span>IT</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>ÎÖÄÉ¹ú¼ÊÎïÁ÷£¨ÉÏº££©ÓÐÏÞ¹«Ë¾</span><span class="gray">&nbsp;[2Äê3¸öÔÂ]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">½»Í¨/ÔËÊä/ÎïÁ÷<span class="p5">|</span>10000ÈËÒÔÉÏ<span class="p5">|</span>Íâ×Ê(Å·ÃÀ)</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-<td valign="top" class="txt1">Javaºó¶Ë¿ª·¢£¬HTML5Ç°¶Ë¿ª·¢£¬iOS&#x20;App¿ª·¢£¬Team&#x20;Leader</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2015/8-2015/9</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">¸ß¼¶Èí¼þ¹¤³ÌÊ¦</strong><span class="p5">|</span><span>¼¼Êõ²¿</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>ÍÅÍÅÐÅÏ¢¼¼ÊõÓÐÏÞ¹«Ë¾</span><span class="gray">&nbsp;[1¸öÔÂ]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">»¥ÁªÍø/µç×ÓÉÌÎñ<span class="p5">|</span>50-150ÈË<span class="p5">|</span>ÃñÓª¹«Ë¾</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-<td valign="top" class="txt1">´øÁìiOS&amp;HTML5×é½øÐÐÏîÄ¿¿ª·¢£¬¸ºÔðºËÐÄ´úÂë±àÐ´¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2013/10-2015/8</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">¸ß¼¶Èí¼þ¹¤³ÌÊ¦</strong><span class="p5">|</span><span>ÐÅÏ¢²¿</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>ÎÖÄÉ¹ú¼ÊÎïÁ÷£¨ÉÏº££©ÓÐÏÞ¹«Ë¾</span><span class="gray">&nbsp;[1Äê10¸öÔÂ]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">½»Í¨/ÔËÊä/ÎïÁ÷<span class="p5">|</span>10000ÈËÒÔÉÏ<span class="p5">|</span>Íâ×Ê(Å·ÃÀ)</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-<td valign="top" class="txt1">ÏîÄ¿¹æ»®£¬ÐèÇó²É¼¯£¬·ÖÎö£¬´úÂë±àÐ´£¬Code&#x20;Review£¬²âÊÔ£¬bugÐÞ¸´¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2012/4-2013/10</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">Senior&#x20;Software&#x20;Engineer</strong><span class="p5">|</span><span>°®Á¢ÐÅ-ÉÏº£</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>Ë²ÁªÈí¼þ¿Æ¼¼£¨±±¾©£©ÓÐÏÞ¹«Ë¾ÉÏº£·Ö¹«Ë¾</span><span class="gray">&nbsp;[1Äê6¸öÔÂ]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">¼ÆËã»úÈí¼þ<span class="p5">|</span>1000-5000ÈË<span class="p5">|</span>Íâ×Ê(Å·ÃÀ)</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-<td valign="top" class="txt1">°®Á¢ÐÅ²úÆ·¿ª·¢£¬Linux/Unix&#x20;System&#x20;Engineer,Bug&#x20;FixingºÍcustomer&#x20;support.</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2011/3-2012/4</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">¸ß¼¶Èí¼þ¹¤³ÌÊ¦</strong><span class="p5">|</span><span>Policy</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>µÂÌ©ÐÅÏ¢¼¼Êõ£¨ÉÏº££©ÓÐÏÞ¹«Ë¾</span><span class="gray">&nbsp;[1Äê1¸öÔÂ]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">¼ÆËã»úÈí¼þ<span class="p5">|</span>50-150ÈË<span class="p5">|</span>Íâ×Ê(Å·ÃÀ)</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-<td valign="top" class="txt1">ÐèÇóÌÖÂÛ£¬´úÂë±àÐ´</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2010/7-2011/3</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">Èí¼þ¹¤³ÌÊ¦</strong><span class="p5">|</span><span>GDC</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>ÉÏº£Ò×±£ÍøÂç¼¼Êõ¹«Ë¾</span><span class="gray">&nbsp;[8¸öÔÂ]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">¼ÆËã»úÈí¼þ<span class="p5">|</span>500-1000ÈË<span class="p5">|</span>Íâ×Ê(Å·ÃÀ)</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-<td valign="top" class="txt1">ÔÚÐÂ¼ÓÆÂIncome±£ÏÕ¹«Ë¾²úÏÕÏîÄ¿×é×ö¿ª·¢ºÍÖ§³ÖÈÎÎñ£¬²ÆÎñºÍ´úÀíÈËÄ£¿é¿ª·¢×é¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2008/3-2010/6</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">Èí¼þ¹¤³ÌÊ¦</strong><span class="p5">|</span><span>NEC&#x20;NCOS&#x20;&amp;&#x20;ÐÂÖÂ¿ª·¢ÖÐÐÄ</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>ÉÏº£ÐÂÖÂÈí¼þÓÐÏÞ¹«Ë¾</span><span class="gray">&nbsp;[2Äê3¸öÔÂ]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">¼ÆËã»úÈí¼þ<span class="p5">|</span>500-1000ÈË<span class="p5">|</span>ºÏ×Ê</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-<td valign="top" class="txt1">ÏÈºóÔÚNNCºÍ½ðÈÚÊÂÒµ²¿£¬Õþ¸®ÊÂÒµ²¿×ö¿ª·¢</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-</table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">ÏîÄ¿¾­Ñé</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0">
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2016/10-ÖÁ½ñ</td>
-<td valign="top" class="rtbox"><strong>Event&#x20;Notification&#x20;Refactor</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">½«ÀÏµÄEvent&#x20;Notification³ÉÖØ¹¹³É»ùÓÚSpring&#x20;boot,&#x20;Spring&#x20;JPA&#x20;data,&#x20;Spring&#x20;mvc,&#x20;angularjs&#x20;¼Ü¹¹µÄÏîÄ¿¡£²¢²ÎÓëÖØÐÂÉè¼ÆÁËÐÂµÄÊý¾Ý¿â½á¹¹¡£¿ª·¢ÐÂµÄ»ùÓÚSpring&#x20;RestµÄRestful&#x20;API¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">²ÎÓëÖØ¹¹¿ª·¢</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2016/10-ÖÁ½ñ</td>
-<td valign="top" class="rtbox"><strong>Final&#x20;Mile&#x20;App</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ËùÊô¹«Ë¾£º</td>
-<td valign="top" class="txt1">ÎÖÄÉ¹ú¼ÊÎïÁ÷£¨ÉÏº££©ÓÐÏÞ¹«Ë¾</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Final&#x20;MileÎªÎÖÄÉµÄ´úÀíÉÌÔÚÔËËÍ´ó¼þ»õÎïµ½¿Í»§ÊÖÖÐµÄÊ±ºòÌá¹©×îºóÒ»¹«ÀïµÄÊÖ»ú¶Ë½â¾ö·½°¸¡£Í¨¹ýapp,&#x20;´úÀíÉÌ¿ìµÝÔ±ÔÚ´ó¼þ´ïµ½Ê±ºòÉ¨Ãè»õÆ·£¬Óë¿Í»§¹µÍ¨½»¸¶£¬Èç¹ûÐÅÏ¢ÎÇºÏ£¬¿Í»§ÎÞÒìÒé¿ÉÒÔÔÚappÇ©×ÖÍê³ÉÔËËÍ¡£Èç¹ûÔÚÎïÆ·ÓÐËð»µµÄÇé¿ö£¬Í¨¹ýOS&amp;D¿ÉÒÔÓë¿Í»§ÏÖ³¡Í¨¹ýÒ»Ð©Ô¤ÖÆ´ëÊ©Óë¿Í»§¾¡¿ÉÄÜ´ï³ÉÐÂµÄÐ­Òé£¬±ÈÈçÒ»¶¨µÄÕÛ¿ÛÍê³ÉÔËËÍ¡£<br>iOS&#x20;AppÊÇÓÃSwift&#x20;3.0¿ª·¢£¬ÊÊÅäiOSËùÓÐÉè±¸£¬Ö§³ÖºáÆÁºÍÊúÆÁÏÔÊ¾¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">¶ÀÁ¢Íê³É&#x20;iOS&#x20;app¿ª·¢</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2015/8-2015/9</td>
-<td valign="top" class="rtbox"><strong>i¼ÒÔ°</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">¼ÒÔ°ÊÇÒ»¸öÎªÉçÇø¾ÓÃñÌá¹©µÄ¿ªÃÅApp£¬³ÉÎª³ýIC¿¨Ö®ÍâµÄÁíÍâÒ»¸öÑ¡Ïî¡£<br>Í¨¹ýi¼ÒÔ°£¬ÓÃ»§»¹¿ÉÒÔÑûÔ¼ÅóÓÑ£¬±»ÑûÔ¼µÄÅóÓÑ¿ÉÒÔÖ±½ÓÍ¨¹ýApp¿ªÃÅÖ±½Ó½øÈëÐ¡Çø£¬²¢¿ÉÒÔµ¼º½µ½ÓÃ»§µÄ¼ÒÀï¡£ÁíÍâÓÃ»§»¹¿ÉÒÔÍ¨¹ýAppÏòÎïÒµ±£ÐÞ£¬½ÓÊÜÎïÒµ·¢ËÍµÄÐ¡ÇøÍ¨ÖªµÈ¡£App»¹¼¯³ÉÁËÁÄÌìºÍÉç½»Ä£¿é£¬ÓÃ»§×Ô¶¯·ÖÅäµ½Ð¡ÇøÍ¬Ò»ÐËÈ¤µÄÈº×éÀïÈºÁÄ£¬Ò²¿ÉÒÔµ¥¶À¼ÓÄ³Ò»¸öÁÚ¾ÓÁÄÌì¡£<br>App»¹¼¯³ÉO2OÉÌ³Ç£¬ÎªÏñeÏ´³µ£¬ÔÆ¼ÒÕþµÈÉú»î·þÎñÀàAppµ¼Á÷¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">´øÁìÍÅ¶ÓÖÆ¶¨½ø¶È£¬ÌÖÂÛÐèÇó£¬½ø¶È¸ú×Ù¡£<br>ÓëÍ¬ÊÂÍê³É¿ªÃÅÄ£¿é¿ª·¢¡£<br>¶ÀÁ¢Íê³ÉÁÄÌìºÍÉç½»Ä£¿é£¬ÓÅ»ÝÈ¯Ä£¿éÇ°¶ËH5¿ª·¢¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2014/10-ÖÁ½ñ</td>
-<td valign="top" class="rtbox"><strong>Trailer&#x20;Inspection</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">XCode(¿ª·¢¹¤¾ß)<br>Mac(Ó²¼þ»·¾³)ÕâÊÇÒ»¸öÎªÍÏ³µ¼ì²éÔ±Ìá¹©µÄiPad&#x20;App£¬ÓÃSwift1.2±àÐ´¡£Í¨¹ýTrailer&#x20;Inspection&#x20;App£¬¼ì²éÔ±¿ÉÒÔ·Ö±ð´ÓÇ°ºó×óÓÒ¼ì²éÍÏ³µ£¬Í¨¹ý¼òµ¥µÄµã»÷Íê³É¼ì²éÑ¡Ïî£¬Èç¹ûÓÐÆÆËð¿ÉÒÔÅÄÕÕ£¬¼ì²é½áÊøºóÓÃGRMustacheÄ£°åÒýÇæÉú³É±¨¸æ£¬·¢ËÍµ½Apple&#x20;AirPrint´òÓ¡¡£ËùÓÐµÄ¼ì²éÊý¾ÝÒì²½´æ´¢µ½Core&#x20;Data£¬²¢ÓÉÁíÍâÒ»¸öºóÌ¨·þÎñ·¢ËÍµ½·þÎñ¶Ë¡£ÏîÄ¿Ö÷ÒªÓÃµ½µÄ¼¼ÊõÓÐSwift,&#x20;GA,&#x20;Flurry,&#x20;Fabric,&#x20;SwiftyJson,GRMustache.swift,&#x20;Java,&#x20;Restful&#x20;Web&#x20;services.</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">²ÎÓëÏîÄ¿¼Æ»®£¬ÐèÇóÌÖÂÛ£¬±àÐ´´úÂë¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2013/10-ÖÁ½ñ</td>
-<td valign="top" class="rtbox"><strong>Routing&#x20;Guide</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Routing&#x20;Guide(RG)ÊÇWerner&#x20;Enterprise·Ö²¼Ê½ÏµÍ³×é¼þÖ®Ò»£¬ÎªWernerµÄ¿Í»§ÅäÖÃÂ·ÓÉ¹æÔò£¬¹ÜÀíLane£¬·ÖÅäË¾»ú¡£ÏîÄ¿ÖÐÖ÷ÒªÓÃµ½¼¼ÊõÓÐ&#x20;Java,&#x20;J2EE,&#x20;Maven,&#x20;JSP,&#x20;JQuery,&#x20;KnockoutJS,Struts2,&#x20;Hibernate,&#x20;EJB,JPA,&#x20;RestEasy,Swagger,&#x20;HTML5,&#x20;JMS,Shiro.ehcache.&#x20;JBoss&#x20;EAP6.Selenium,&#x20;Cucumber.</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">Ìá³öºËÐÄÐèÇó£¬ÕûÀíÎÄµµ£¬±àÐ´ÒµÎñºÍ²âÊÔ´úÂë¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2013/10-ÖÁ½ñ</td>
-<td valign="top" class="rtbox"><strong>Event&#x20;Notification</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Event&#x20;Notification(EN)ÊÇWerner&#x20;Enterprise·Ö²¼Ê½ÏµÍ³×é¼þÖ®Ò»£¬ÊôÓÚºóÌ¨¹ÜÀíÐÍweb&#x20;application¡£Í¨¹ýEN£¬¿Í»§¶Ë¿ÉÒÔ¶©ÔÄÄ³Ò»¸öÊÂ¼þ£¬ÊÂ¼þ¶ÔÓ¦¶¯Ì¬¿ÉÅäÖÃµÄEvent&#x20;Type£¬Event&#x20;TypeÖÐÅäÖÃ·ûºÏ¿Í»§¶ËÐèÇóµÄ×Ö¶Î£¬µ±´¥·¢¸ÃEventµÄÊ±ºò£¬ºóÌ¨Message&#x20;Driven&#x20;Bean»á½«EmailºÍ¶ÌÐÅ·¢ËÍµ½·ûºÏ¶©ÔÄÕß¹ýÂËÌõ¼þµÄ¿Í»§¶ËÉÏ¡£ÏîÄ¿ÖÐÖ÷ÒªÓÃµ½¼¼ÊõÓÐ&#x20;Java,&#x20;J2EE,&#x20;Maven,&#x20;JSP,&#x20;JQuery,&#x20;KnockoutJS,Struts2,&#x20;Hibernate,&#x20;EJB,JPA,&#x20;RestEasy,Swagger,&#x20;HTML5,&#x20;JMS,Shiro.ehcache.&#x20;JBoss&#x20;EAP6,Selenium,&#x20;Cucumber.</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">Ìá³öºËÐÄÐèÇó£¬ÕûÀíÎÄµµ£¬±àÐ´ÒµÎñºÍ²âÊÔ´úÂë¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2013/3-ÖÁ½ñ</td>
-<td valign="top" class="rtbox"><strong>IPWorks</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)<br>SUSE&#x20;linux(Èí¼þ»·¾³)IPWorksÊÇÒ»×éIPÐ­Òé×ÓÐ­ÒéµÄÊµÏÖ£¬Ö÷ÒªÌá¹©DNS,ENUM,DHCP,AAA,WIFI·þÎñ¡£Storage&#x20;ServerÎª¸÷Ä£¿éÌá¹©¼¯ÖÐÊý¾Ý¿â·þÎñ¡£Server&#x20;Manager¹ÜÀí¸÷¸öÄ£¿éµÄ·þÎñ¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">MySQL&#x20;NDB,&#x20;InnoDBÎ¬»¤£¬IPWorks&#x20;webÄ£¿é£¬Storage&#x20;server¼°server&#x20;managerÄ£¿éÎ¬»¤¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2012/12-2013/3</td>
-<td valign="top" class="rtbox"><strong>Web&#x20;Client&#x20;Enabler</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)<br>Java(Èí¼þ»·¾³)WCEÊÇÎªIOSºÍAndroidµÄBCS¿Í»§¶ËÌá¹©IM·þÎñµÄserver,Ö§³ÖHTTPÐ­Òé¡£Ö÷Òª¸øÆóÒµ¼¶ÓÃ»§Ìá¹©¼°Ê±Í¨Ñ¶£¬ÎÄ¼þ´«Êä£¬ÔÚÏß×´Ì¬£¬·Ö×éµÈ¹¦ÄÜ¡£Í¨¹ý»ùÓÚJerseyµÄRESTful&#x20;web&#x20;servicesÓëÒÆ¶¯¿Í»§¶Ë½øÐÐ½»»¥¡£ÀûÓÃJAVA&#x20;NIOÊµÏÖ¸ß²¢·¢µÄsocketÍ¨Ñ¶¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">Jersey&#x20;web&#x20;services&#x20;½Ó¿Ú¿ª·¢¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2012/4-2012/12</td>
-<td valign="top" class="rtbox"><strong>Mobility</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)<br>Sun&#x20;Blade(Ó²¼þ»·¾³)MobilityÊÇÒ»¸öÎ»ÓÚIMSÍøÂç¸ºÔðIMSÓëPSTNÍøÂçÖ®¼äÐ­Òé×ª»»µÄ·Ö²¼Ê½ÏµÍ³¡£Ö÷ÒªÓÐ¼ÆÊý£¬License£¬PSTNÍøÂçµç»°ÓëIMSÈí¼þµç»°×ª½Ó£¨SIPÐ­ÒéÓëCAMELÐ­Òé×ª»»£©£¬×¢²áÓÃ»§µ½CSCFµÈ¹¦ÄÜ¡£<br>&#x20;&#x20;&#x20;ÕâÊÇÒ»¸ö»ùÓÚJ2EE£¬ÔËÐÐÔÚSun&#x20;GlassFish&#x20;Web&#x20;ServerÉÏµÄ·Ö²¼Ê½µÄÏµÍ³¡£Ìá¹©ÓÃ»§Êý¾ÝµÄÔöÉ¾¸Ä²éweb&#x20;services&#x20;½Ó¿Ú£¬Êý¾Ý±£´æµ½·Ö²¼Ê½µÄMysqlÊý¾Ý¿â£¬ÔÙÓÃQuartz&#x20;Job½«ÕâÐ©ÓÃ»§Êý¾Ý×¢²áµ½IMSÍøÂçµÄCSCFÉÏ¡£µ±ÓÐTcapµÄÏûÏ¢×ª½Óµ½mobilityµÄÊ±ºò£¬mobility½«ÏûÏ¢Í¨¹ýJCA´æµ½SS7Ð­ÒéÕ»£¬½«Éú²úµÄcorrelation&#x20;Id´æµ½Hazelcast(Ò»ÖÖ·Ö²¼Ê½µÄjava.util.MapµÄÊµÏÖ)£¬²¢·µ»Ø¸øÇëÇó·½Õâ¸öcorrelation&#x20;Id£¬Íê³ÉÒ»´ÎÎÕÊÖºó£¬ÇëÇó·½Ð¯´øcorrelation&#x20;ID·¢ÆðSIPÇëÇó£¬Mobility·ÖÎöcorrelationIdÊÇ·ñÆ¥Åä£¬²¢½«×ª½Ó¡£<br>&#x20;&#x20;&#x20;Ö÷ÒªÓ¦ÓÃµ½µÄ¼¼ÊõÓÐ:Java,EJB,Spring,JPA,JCA,JMS,JMX,Quartz,SIP&#x20;Servlet¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">»ùÓÚAgile/ScrumÄ£Ê½ÏÂµÄÐÂ¹¦ÄÜ¿ª·¢£¬²úÆ·Î¬»¤¼°¿Í»§Ö§³Ö¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2010/7-2012/3</td>
-<td valign="top" class="rtbox"><strong>ÐÂ¼ÓÆÂIncome±£ÏÕ¹«Ë¾²úÏÕÏµÍ³</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)IncomeÊÇÐÂ¼ÓÆÂ×î´óµÄ±£ÏÕ¹«Ë¾£¬eBao&#x20;IncomeÍÅ¶ÓÎªÆäÌá¹©ÊÙÏÕ¡¢²úÏÕ¼°Öî¶àÏµÍ³µÄ¼¯³É¿ª·¢¡¢²âÊÔ¡¢Î¬»¤¼°Êý¾ÝÇ¨ÒÆ·þÎñ¡£ÆäÖÐ²úÏÕÏµÍ³¼¯³ÉÁË²úÏÕºËÐÄÒµÎñÏµÍ³¡¢ÀíÅâÏµÍ³¡¢Easy&#x20;port¡¢DASµÈÖî¶àÏµÍ³µÄÒ»Ìå»¯£¬¶øÆäÖÐ×îÎª¸´ÔÓµÄºËÐÄÒµÎñÏµÍ³ÕûºÏÁËÐÂÆõÔ¼¡¢Ðø±£¡¢Åú¸Ä¡¢²ÆÎñ¡¢ÔÙ±£¡¢ÀíÅâ¡¢´úÀíÈË¹¦ÄÜÄ£¿é£¬²¢Ìá¹©eBao¸ïÃü»¯£¬ÖÇÄÜ»¯µÄ·çÏÕÆÀ¹À£¬¶àÍ¾¾¶·ÖÌ¯·çÏÕµÈË¼Ïë¡£<br>&#x20;&#x20;&#x20;&#x20;Í¨¹ýÒ×±£ÌØÓÐµÄ¿ò¼ÜÏµÍ³£¬Ìá¹©µ¥µãµÇÂ¼¡¢FMS¡¢RMS¡¢EMSµÈ³¬Ç¿µÄÒµÎñ¿ÉÅäÖÃÐÔ¹¦ÄÜÄ£¿é¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">²ÆÎñ·ÑÓÃµÄ²Ù×÷ÀúÊ·±¨±í¹¦ÄÜ£¬DAS¼¯³ÉÏµÍ³²ÆÎñÄ£¿é£¨web&#x20;service)£¬µç×ÓÊÕ·ÑÄ£¿é£¬Ó¶½ð·¢·Å¹¦ÄÜÒÔ¼°²ÆÎñ²Ù×÷±¨±íµÄ¿ª·¢£¬²¢Ìá¹©²ÆÎñÄ£¿éËùÓÐ¹¦ÄÜµÄbugÐÞ¸´,ÐÔÄÜÓÅ»¯£¬ÒÔ¼°Ç¨ÒÆÊý¾ÝµÄÖ§³Ö£¬²¢ÅäºÏÒµÎñÈËÔ±ÎªÓÃ»§Ìá¹©Ö§³Ö¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2009/11-2010/6</td>
-<td valign="top" class="rtbox"><strong>IPTV&#x20;BOSSÔËÓª¼Æ·ÑÖ§³ÅÏµÍ³</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)<br>struts&#x20;hibernate&#x20;spring(Èí¼þ»·¾³)ËüÊÇÎª¿í´øÖÐÐÄÌá¹©µÄiptvºÍÉÏÍøÒµÎñµÄÔËÓªºÍ¼Æ·Ñ¹ÜÀíÏµÍ³¡£¼Æ·ÑÌåÏµ°üÀ¨:Ô¤¸¶·Ñ¡¢ºó¸¶·Ñ¡¢·þÎñ²úÆ·ºÍ¼Æ·Ñ²ßÂÔµÄ¹ÜÀí¡£ÔËÓªÏµÍ³°üÀ¨£ºÓÃ»§¿ª»§¡¢Ïú»§¡¢ÒÆ»ú¡¢»»»ú¡¢ÕË»§¡¢¿Í»§¡¢ÇøÓò¹ÜÀí£¬»¹°üÀ¨ÔËÓªÉÌºÍ´úÀíÉÌµÄ¹ÜÀí£¬°üÀ¨¿ª»§¹ý³ÌÖÐµÄ¹¤µ¥¹ÜÀí£¬»ú¶¥ºÐ¹ÜÀí£¬Îª¸÷¸ö¹¦ÄÜÌá¹©¿ÉÄÜÐèÒªµÄ±¨±íÉú³ÉºÍÈÕÖ¾¼ÇÂ¼¹¦ÄÜ£¬Ìá¹©¿Í·þ¹ÜÀí£¬ÎªÊ¹ÓÃ¸Ã¹ÜÀíÏµÍ³Ìá¹©½ÇÉ«ºÍÈ¨ÏÞ£¬²¿ÃÅºÍ³ÉÔ±µÄ¹ÜÀí¡£<br>&#x20;&#x20;&#x20;&#x20;&#x20;ÀûÓÃstruts&#x20;spring&#x20;hibernate¿ò¼Ü¼¼ÊõÀ´ÊµÏÖWEBÓ¦ÓÃ£¬¼Æ·ÑÔòÓÉÊý¾Ý¿â¶ËÌá¹©¸÷ÖÖ¼Æ·Ñ¹¦ÄÜµÄº¯Êý¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">IPTVÓÃ»§¹ÜÀí¡¢ÏµÍ³¹ÜÀí¡¢ÒµÎñ¹ÜÀíÄ£¿éµÄÏêÏ¸Éè¼Æ¡¢´úÂë±àÐ´ºÍ²âÊÔ¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2009/5-2009/10</td>
-<td valign="top" class="rtbox"><strong>»ù½ðÍÐ¹ÜÔÚÏß¿Í·þÃÅ»§ÏµÍ³</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)<br>Linux(Èí¼þ»·¾³)½»Í¨ÒøÐÐµÄ»ù½ðÍÐ¹ÜÔÚÏß¿Í·þÏµÍ³£¬Îª»ù½ðÍÐ¹ÜµÄÓÃ»§Ìá¹©Ò»¸öÍøÉÏ·þÎñµÄÆ½Ì¨¡£ËüÊÇÒ»¸ö¼¯³ÉÁËËùÓÐ·þÎñµÄÃÅ»§£¬¹²·Ö¹«Ë¾ÐÐ¶¯¡¢xbsl¶ÔÕË²éÑ¯¡¢±¨±íÏµÍ³¡¢¹É¶«´ó»á¡¢ÔÚÏß°ïÖúµÈÄ£¿é×é³É£»Ö÷ÒªÀûÓÃJsp+EL+tag+JavaScriptÕ¹ÏÖÇ°Ì¨£¬ÀûÓÃSpring×öÏµÍ³¼Ü¹¹»ù´¡£¬Í¨¹ýJDBC,JNDI,HibernateµÈ¶àÖÖ·½Ê½Ñ¡ÔñÐÔÁ¬½ÓÊý¾Ý¿â£¨DB2£©,ÀûÓÃWebshpere×÷ÎªWEBÈÝÆ÷¡£ÕûºÏnewtouch&#x20;MVC¿ò¼Ü£¬²¢½áºÏJQuery+AJAX·½Ê½µ÷ÓÃºóÌ¨ÒµÎñÂß¼­¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">±¨±í¶©ÖÆ¡¢¹«Ë¾ÐÐ¶¯ºÍÔÚÏß°ïÖúÄ£¿éµÄÏêÏ¸Éè¼Æ¡¢CodingºÍ²âÊÔ¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2008/7-2009/5</td>
-<td valign="top" class="rtbox"><strong>Transport&#x20;Integration&#x20;EMS&#x20;Upper&#x20;Layer&#x20;IF</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)<br>WindowsXP(Èí¼þ»·¾³)ÎªÏÂÎ»MS5000ºÍÉÏÎ»ÏµÍ³Ìá¹©CORBAµÄÍ¨Ñ¶½Ó¿Ú£¬Ìá¹©FMºÍCMºÍcommon&#x20;system&#x20;´ÓMS5000µ½ÉÏÎ»ÏµÍ³µÄ×ª»¯£¬ËùÓÐÉÏÎ»µÄ±ê×¼±ØÐëÂú×ãTMF&#x20;MTNM·Ö²¼Ê½µçÐÅÍøÂç¹ÜÀí±ê×¼£¬Ìá¹©Notification&#x20;service&#x20;ÎªMS5000&#x20;Ìá¹©·¢ËÍºÍ½ÓÊÜeventÍ¨µÀ£¬Ìá¹©¹²Í¨½øÐÐCORBA&#x20;interfaceµÄÆô¶¯ÖÕÁËµÈÏà¹Ø²Ù×÷£»Ìá¹©license¹ÜÀíÏµÍ³¡£Ìá¹©eventµÄ´íÎó´¦Àí£»¸ÃÏµÍ³»¹ÐèÒªÎªºóÆÚµÄÏµÍ³Ìá¹©½Ó¿Ú£¬·ûºÏXMLºÍSNMPÍ¨Ñ¶¼Æ»®£»Ìá¹©´ÓMS5000ÖÐÃ¿¸öNE×Ö¶Îµ½CORBA±ê×¼µÄ×Ö¶Î×ª»¯£¬Ìá¹©¶ÔÉÏÎ»ÏµÍ³requestµÄ´íÎó´¦ÀíµÄÏàÓ¦£¬Ìá¹©ÄÚ²¿´íÎó´¦Àí»úÖÆ£»ÀûÓÃµÚÈý·½JacORBËõ¶ÌÏîÄ¿¿ª·¢Ê±¼ä£»ÀûÓÃFramework&#x20;Ä£ÄâÉÏÎ»ÏµÍ³£»</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">µ÷ÑÐ£¬Mapping¹ÜÀí£¬¹²Í¨¿é´úÂë±àÐ´£¬²âÊÔÓÃÀý±àÐ´£¬ÐÔÄÜ²âÊÔ´úÂë±àÐ´¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2008/5-2008/7</td>
-<td valign="top" class="rtbox"><strong>D3A&#x20;prototype</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)½ÓÊÜ´ÓÊÖ»ú¿Í»§¶Ë´«À´µÄÐÅÏ¢£¬ÎªFS£¨front&#x20;server£©Ìá¹©Õ¹Ê¾ÐÅÏ¢ÁÐ±í£¬Ö÷ÒªÀûÓÃAJax,servelt,JSP¼¼Êõ£¬Í¨¹ý¹ýÂËÆ÷£¬Ìá¹©¿É·­Ò³µÄalarmÐÅÏ¢ÁÐ±í¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">¹ýÂË¡¢Õ¹Ê¾¡¢Ò³Ãæ±àÐ´£¬UT¼°ÐÔÄÜ²âÊÔ¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2008/3-2008/5</td>
-<td valign="top" class="rtbox"><strong>D3A&#x20;Common&#x20;IF&#x20;Stub</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-<td valign="top" class="txt1">Eclipse(¿ª·¢¹¤¾ß)<br>WindowsXP(Èí¼þ»·¾³)ÉÏÎ»ÏµÍ³ÊÇÔÚÎ´¿ª·¢³öµÄÅÓ´óÏµÍ³£¬ÎªÁËÄ£ÄâÉÏÎ»ÏµÍ³¶ø×öµÄÄ£ÄâÏµÍ³¡£Ö÷ÒªÀûÓÃxmlºÍJava·´Éä¼¼Êõ£¬ÅäÖÃÏêÏ¸µÄÉÏÎ»ÏµÍ³Ä£¿é¼°ÆäÔ¤Ïë·µ»ØµÄÕý³£»òÒì³£½á¹û¡£</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÔðÈÎÃèÊö£º</td>
-<td valign="top" class="txt1">xml¶ÁÐ´²Ù×÷£¬¹²Í¨Òì³£¿âÄ£¿éµÄÉè¼ÆºÍcoding¡£</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-</table></td></tr>
-</tbody></table>
-<table xmlns="" class="box"><tbody>
-<tr><td class="plate1">½ÌÓý¾­Àú</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2002/9-2008/7</td>
-<td valign="top" class="rtbox"><strong>¶«»ª´óÑ§</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2">±¾¿Æ<span class="p5">|</span>¼ÆËã»ú¿ÆÑ§Óë¼¼Êõ</td></tr>
-</tbody></table></td></tr></table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">
-              ¼¼ÄÜÌØ³¤
-              <span class="f12">£¨°üÀ¨IT¼¼ÄÜ¡¢ÓïÑÔÄÜÁ¦¡¢Ö¤Êé¡¢³É¼¨¡¢ÅàÑµ¾­Àú£©</span>
-</td></tr>
-<tr><td class="tbb">
-<table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">¼¼ÄÜ/ÓïÑÔ</td></tr>
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="tb2 cell" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">DB2</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">¾«Í¨</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">J2EE</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">¾«Í¨</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Oracle</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">ÊìÁ·</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">OO</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">¾«Í¨</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Java</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">¾«Í¨</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Ó¢Óï</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">¾«Í¨</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell yb" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">ÈÕÓï</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">Ò»°ã</span></span></td>
-</tr></tbody></table></td>
-</tbody></table></td></tr>
-</tbody></table>
-<table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">Ö¤Êé</td></tr>
-<tr><td class="tb3"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="time">2007/7</td>
-<td valign="top" class="rtbox"><strong class="txt3">´óÑ§Ó¢ÓïËÄ¼¶</strong></td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb3 con"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="time">2006/6</td>
-<td valign="top" class="rtbox"><strong class="txt3">IBM&#x20;UMLÈÏÖ¤</strong></td>
-</tr></tbody></table></td></tr>
-</tbody></table>
-<table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">ÅàÑµ¾­Àú</td></tr>
-<tr><td class="p15">
-<table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="time">2006/3--2006/9</td>
-<td valign="top" class="rtbox"><strong class="txt3">Core&#x20;Java&#x20;J2EE&#x20;SSH¿ò¼Ü&#x20;Oracle&#x20;µÈ</strong></td>
-</tr></tbody></table>
-<table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÅàÑµ»ú¹¹£º</td>
-<td valign="top" class="txt2">Tarena&#x20;corp.</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">ÅàÑµµØµã£º</td>
-<td valign="top" class="txt2">ÈËÃñ¹ã³¡¿Æ¼¼¾©³Ç</td>
-</tr></tbody></table></td>
-</tr></tbody></table>
-</td></tr>
-</tbody></table>
-</td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">¸½¼ÓÐÅÏ¢</td></tr>
-<tr><td class="tbb"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">ÆäËû</td></tr>
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="tb1"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="keys">Ö÷Ìâ£º</td>
-<td valign="top" class="txt3">ÍÆ¼öÐÅ</td>
-</tr>
-<tr>
-<td valign="top" class="keys">Ö÷ÌâÃèÊö£º</td>
-<td valign="top" class="txt1">ÎÒµÄÀíÏë¾ÍÊÇ×öÒ»Ãû³öÉ«µÄÈí¼þ¹¤³ÌÊ¦£¬Ï²»¶ÎÒµÄ¹¤×÷²¢ÓÐ¼«¸ßµÄÈÈÇé¡£Ï²»¶Ñ§Ï°ÊµÓÃµÄÐÂ¼¼Êõ£¬ÀÖÓÚÓëÍ¬ÊÂ·ÖÏí¾­Ñé£¬¹¤×÷ºóÒ»Ö±´ÓÊÂJavaºó¶Ë£¬Web&#x20;ApplicationºÍiOS&#x20;app¿ª·¢²¢²ÎÓë¼¼Êõ¼Ü¹¹ºÍÏµÍ³¼Ü¹¹µÄ¹¤×÷¡£</td>
-</tr>
-</tbody></table></td></tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-</tbody></table></td></tr></tbody></table></body></html>
+    body {
+        font-size: 14px;
+        font-family: "microsoft yahei";
+        background-color: #ffffff
+    }
 
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: fixed
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 0
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    img {
+        border: 0 none
+    }
+
+    .blue {
+        text-decoration: none;
+        color: #3c3d5d
+    }
+
+    .chead {
+        width: 1002px
+    }
+
+    .chead .logo {
+        width: 698px;
+        height: 90px
+    }
+
+    .chead .txt {
+        width: 152px;
+        height: 90px
+    }
+
+    .column {
+        width: 1002px;
+        line-height: 28px;
+        border: 1px solid #dedede
+    }
+
+    .column .hbox {
+        width: 185px;
+        height: 154px
+    }
+
+    .column .head {
+        display: block;
+        background-color: #fafafa
+    }
+
+    .column .box {
+        width: 100%;
+        background-color: #ffffff;
+        border-top: 2px solid #f2f3f5
+    }
+
+    .column .box1 {
+        width: 100%;
+        word-wrap: break-word;
+        color: #ffffff;
+        background-color: #3f4160
+    }
+
+    .column .box2 {
+        width: 100%;
+        background-color: #f8f9fa
+    }
+
+    .column .tba {
+        width: 940px;
+        padding: 0 30px 15px
+    }
+
+    .column .tbb {
+        width: 940px;
+        padding: 0 30px
+    }
+
+    .column .tb1 {
+        width: 900px;
+        line-height: 28px;
+        color: #333333;
+        word-break: break-all;
+        padding: 0 20px
+    }
+
+    .column .tb2 {
+        width: 430px;
+        padding: 0 20px
+    }
+
+    .column .tb3 {
+        width: 900px;
+        padding: 15px 20px 15px 0
+    }
+
+    .column .gray, .column .gray2 {
+        color: #999999;
+        word-break: break-all
+    }
+
+    .column .gray2 {
+        color: #666666
+    }
+
+    .column .plate1, .column .plate2 {
+        width: 430px;
+        height: 54px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #818ba3
+    }
+
+    .column .plate1 {
+        width: 900px;
+        padding: 0 50px
+    }
+
+    .column .plate1 .f16 {
+        font-size: 14px;
+        font-weight: normal;
+        color: #333333
+    }
+
+    .column .plate1 .f12 {
+        font-size: 12px;
+        font-weight: normal;
+        color: #999999
+    }
+
+    .column .keys, .column .keys2 {
+        width: 85px;
+        line-height: 28px;
+        color: #666666
+    }
+
+    .column .keys2 {
+        width: 110px
+    }
+
+    .column .txt1, .column .txt2, .column .txt3 {
+        width: 815px;
+        line-height: 28px;
+        color: #333333;
+        word-break: break-all
+    }
+
+    .column .txt2 {
+        width: 345px
+    }
+
+    .column .txt3 {
+        width: auto;
+        max-width: 815px;
+        font-size: 14px;
+        font-weight: bold
+    }
+
+    .column .txt4 {
+        width: 305px;
+        color: #ffffff;
+        word-break: break-all
+    }
+
+    .column .infr {
+        width: 767px;
+        color: #ffffff;
+        table-layout: auto
+    }
+
+    .column .vam, .column .grcha {
+        vertical-align: middle;
+        margin-left: 5px
+    }
+
+    .column .box1 .vam {
+        margin-right: 5px;
+        margin-left: 0
+    }
+
+    .column .name {
+        font-size: 24px;
+        padding-bottom: 18px
+    }
+
+    .column .icard {
+        color: #a1a3ae;
+        padding-bottom: 18px
+    }
+
+    .column .con {
+        border-top: 1px dotted #ddd
+    }
+
+    .column .pr20 {
+        width: 225px;
+        padding-right: 20px
+    }
+
+    .column .time {
+        width: 120px;
+        line-height: 28px;
+        color: #666666;
+        padding-left: 20px
+    }
+
+    .column .rtbox {
+        width: 765px;
+        line-height: 28px;
+        color: #333333;
+        padding: 0 20px 0 15px;
+        word-break: break-all
+    }
+
+    .column .hai, .column .guan {
+        line-height: 18px;
+        font-size: 12px;
+        color: #ffffff;
+        vertical-align: text-top;
+        margin-left: 5px;
+        padding: 1px 3px;
+        background-color: #3cbe7f;
+        border-radius: 2px
+    }
+
+    .column .guan {
+        background-color: #ff9f20
+    }
+
+    .column .tag {
+        display: inline-block;
+        word-break: break-all;
+        #display: inline;
+        #zoom: 1
+    }
+
+    .column .all {
+        color: #666;
+        padding: 10px 20px;
+        background-color: #fafafa
+    }
+
+    .column .tit {
+        width: 900px;
+        height: 40px;
+        color: #666666;
+        padding: 0 20px;
+        background-color: #f5f5f5
+    }
+
+    .column .p15 {
+        padding: 15px 0
+    }
+
+    .column .p5 {
+        display: inline-block;
+        color: #666666;
+        padding: 0 5px;
+        #display: inline;
+        #zoom: 1
+    }
+
+    .column .cell .skill {
+        width: 165px;
+        text-align: right;
+        padding-right: 15px
+    }
+
+    .column .cell .skbg, .column .cell .skco {
+        display: inline-block;
+        width: 245px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        color: #ffffff;
+        vertical-align: top;
+        margin-top: 6px;
+        background-color: #dddddd;
+        border-radius: 20px;
+        #display: inline;
+        #zoom: 1
+    }
+
+    .column .cell .skco {
+        width: 235px;
+        font-style: normal;
+        margin-top: 0;
+        padding-left: 10px;
+        background-color: #ff9f20;
+        z-index: 3
+    }
+
+    .column .sl .skco {
+        width: 173px
+    }
+
+    .column .lh .skco {
+        width: 112px
+    }
+
+    .column .yb .skco {
+        width: 51px
+    }
+
+    .column .fbox strong {
+        font-size: 14px;
+        font-weight: bold
+    }
+
+    .column .cha {
+        font-size: 12px;
+        font-weight: normal;
+        color: #00457d;
+        margin-left: 5px
+    }
+
+    .column .cha:hover {
+        color: #ff6000
+    }
+
+    .column .email {
+        width: 330px
+    }
+
+    .eng td, .eng .txt3, .eng .fbox strong {
+        font-size: 13px;
+        font-family: 'Arial'
+    }
+
+    .eng .txt1, .eng .rtbox, .eng .phd {
+        width: 775px;
+        font-size: 13px;
+        font-family: 'Arial';
+        line-height: 28px
+    }
+
+    .eng .txt2 {
+        width: 305px
+    }
+
+    .eng .txt4 {
+        width: 245px
+    }
+
+    .eng .cell .txt3 {
+        width: 120px
+    }
+
+    .eng .time, .eng .keys {
+        width: 110px;
+        font-size: 13px;
+        text-align: right
+    }
+
+    .eng .cell .skill {
+        width: 130px
+    }
+
+    .eng .phd {
+        padding-left: 145px
+    }
+
+    .eng .keys {
+        padding-right: 15px
+    }
+
+    .eng .pr20 {
+        width: 205px
+    }
+
+    .eng .pr20 .keys {
+        width: 100px
+    }
+
+    .eng .email {
+        width: 270px
+    }
+</style>
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
+    <tbody>
+    <tr>
+        <td valign="top">
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box1">
+                <tbody>
+                <tr>
+                    <td class="hbox" align="middle"><img
+                            src="http://i.51job.com/resume/ajax/image.php?type=avatar&amp;userid=27055839&amp;key=9327c4d8b9d277cfdbd34c4d8a09a6f1"
+                            width="85" height="104" class="head" alt="头像"></td>
+                    <td>
+                        <table cellspacing="0" cellpadding="0" border="0" class="infr">
+                            <tbody>
+
+                            <tr>
+
+                                <td valign="top">
+                                    <img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y2.png" width="20"
+                                         height="20">17721308697
+                                </td>
+                                <td valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" class="email">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" width="25"><img class="vam"
+                                                                             src="http://img01.51jobcdn.com/im/2016/resume/y3.png"
+                                                                             width="20" height="20"></td>
+                                            <td valign="top" class="txt4">leeming-jiang@163.com</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" colspan="3"><p><img class="vam"
+                                                                     src="http://img01.51jobcdn.com/im/2016/resume/y4.png"
+                                                                     width="20" height="20">男<span class="p5">|</span>34
+                                    岁 (1983/07/06)<span class="p5">|</span>现居住上海-松江区<span class="p5">|</span>10年工作经验
+                                </p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box2">
+                <tbody>
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td valign="top" class="tb2">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <thead style="height:0">
+                                        <tr>
+                                            <td valign="top" class="keys"></td>
+                                            <td valign="top" class="txt2"></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td colspan="2" class="plate2">最近工作</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="keys">职位：</td>
+                                            <td valign="top" class="txt2">高级软件工程师</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="keys">公司：</td>
+                                            <td valign="top" class="txt2">沃纳国际物流(上海)有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="keys">行业：</td>
+                                            <td valign="top" class="txt2">物流</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td valign="top" class="tb2">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <thead style="height:0">
+                                        <tr>
+                                            <td valign="top" class="keys"></td>
+                                            <td valign="top" class="txt2"></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td colspan="2" class="plate2">最高学历/学位</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="keys">专业：</td>
+                                            <td valign="top" class="txt2">计算机科学与技术</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="keys">学校：</td>
+                                            <td valign="top" class="txt2">东华大学</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="keys">学历/学位：</td>
+                                            <td valign="top" class="txt2">本科</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                <tbody>
+                <tr>
+                    <td class="plate1">个人信息</td>
+                </tr>
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">微信号：
+                                            </td>
+                                            <td valign="top" class="txt2">blue_city_moon</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">户口/国籍：</td>
+                                            <td valign="top" class="txt2">安徽省</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">婚姻状况：</td>
+                                            <td valign="top" class="txt2">已婚</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="tb2" valign="top">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="tb1" colspan="2">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <thead style="height:0">
+                                        <tr>
+                                            <td valign="top" class="keys"></td>
+                                            <td valign="top" class="txt1"></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">个人主页：</td>
+                                            <td valign="top" class="txt1">https://github.com/bluecitymoon</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                <tbody>
+                <tr>
+                    <td class="plate1">求职意向</td>
+                </tr>
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tb1" colspan="2">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <thead style="height:0">
+                                        <tr>
+                                            <td valign="top" class="keys"></td>
+                                            <td valign="top" class="txt1"></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">个人标签：</td>
+                                            <td valign="top" class="txt1">
+                                                <span class="tag">Java&nbsp;&nbsp;</span><span class="tag">Swift&nbsp;&nbsp;</span><span
+                                                    class="tag">HTML5&nbsp;&nbsp;</span><span class="tag">Restful</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">地点：</td>
+                                            <td valign="top" class="txt2"><span class="tag">上海</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">职能/职位：</td>
+                                            <td valign="top" class="txt2">
+                                                <span class="tag">高级软件工程师</span><span class="tag">&nbsp;&nbsp;Java高级开发工程师</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">行业：</td>
+                                            <td valign="top" class="txt2"><span class="tag">计算机软件</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">到岗时间：</td>
+                                            <td valign="top" class="txt2">1个月内</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">工作类型：</td>
+                                            <td valign="top" class="txt2">全职</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb1" colspan="2">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <thead style="height:0">
+                                        <tr>
+                                            <td valign="top" class="keys"></td>
+                                            <td valign="top" class="txt1"></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">自我评价：</td>
+                                            <td valign="top" class="txt1">
+                                                十年项目经验，熟练Java，Swift代码编写能力，可独立或者带领团队完成后端系统开发，web端开发或是iOS&#x20;app开发。流利英语口语能力，熟悉Spring及多种组件(Spring&#x20;Cloud,&#x20;Spring&#x20;mvc,&#x20;Spring&#x20;boot,&#x20;Spring&#x20;Oauth2,&#x20;Spring&#x20;JPA&#x20;data等)，Hibernate，Struts,&#x20;EJB。熟悉HTML5，AngularJS。了解ElasticSearch,&#x20;Redis,&#x20;Ionic,&#x20;Cordova,&#x20;Objective-C,&#x20;Kotlin.&#x20;熟悉Oracle，DB2，MySQL，有互联网、银行、电信、物流和保险行业项目开发经验。对新技术饱有持续的热情，并有快速学习的能力。Github:&#x20;https://github.com/bluecitymoon&#x20;&#x20;Coding.Net:&#x20;https://coding.net/u/bluecitymoon
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                <tbody>
+                <tr>
+                    <td class="plate1">工作经验</td>
+                </tr>
+
+                <tr>
+                    <td class="tbb">
+                        <table cellspacing="0" cellpadding="0" border="0">
+
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2013/10-至今</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong class="txt3">高级软件工程师</strong><span
+                                                    class="p5">|</span><span>IT</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1" colspan="2">
+                                                <span>沃纳国际物流（上海）有限公司</span><span class="gray">&nbsp;[4年4个月]
+                    </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1 gray2" colspan="2">交通/运输/物流<span class="p5">|</span>10000人以上<span
+                                                    class="p5">|</span>外资(欧美)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">工作描述：</td>
+                                                        <td valign="top" class="txt1">Java后端开发，HTML5前端开发，iOS&#x20;App开发，Team&#x20;Leader</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p15">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2015/8-2015/9</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong class="txt3">高级软件工程师</strong><span
+                                                    class="p5">|</span><span>技术部</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1" colspan="2">
+                                                <span>团团信息技术有限公司</span><span class="gray">&nbsp;[1个月]
+                    </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1 gray2" colspan="2">互联网/电子商务<span class="p5">|</span>50-150人<span
+                                                    class="p5">|</span>民营公司
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">工作描述：</td>
+                                                        <td valign="top" class="txt1">带领iOS&amp;HTML5组进行项目开发，负责核心代码编写。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2012/4-2013/10</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong class="txt3">Senior&#x20;Software&#x20;Engineer</strong><span
+                                                    class="p5">|</span><span>爱立信-上海</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1" colspan="2">
+                                                <span>瞬联软件科技（北京）有限公司上海分公司</span><span class="gray">&nbsp;[1年6个月]
+                    </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1 gray2" colspan="2">计算机软件<span class="p5">|</span>1000-5000人<span
+                                                    class="p5">|</span>外资(欧美)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">工作描述：</td>
+                                                        <td valign="top" class="txt1">爱立信产品开发，Linux/Unix&#x20;System&#x20;Engineer,Bug&#x20;Fixing和customer&#x20;support.</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2011/3-2012/4</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong class="txt3">高级软件工程师</strong><span class="p5">|</span><span>Policy</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1" colspan="2">
+                                                <span>德泰信息技术（上海）有限公司</span><span class="gray">&nbsp;[1年1个月]
+                    </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1 gray2" colspan="2">计算机软件<span
+                                                    class="p5">|</span>50-150人<span class="p5">|</span>外资(欧美)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">工作描述：</td>
+                                                        <td valign="top" class="txt1">需求讨论，代码编写</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2010/7-2011/3</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong class="txt3">软件工程师</strong><span
+                                                    class="p5">|</span><span>GDC</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1" colspan="2">
+                                                <span>上海易保网络技术公司</span><span class="gray">&nbsp;[8个月]
+                    </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1 gray2" colspan="2">计算机软件<span class="p5">|</span>500-1000人<span
+                                                    class="p5">|</span>外资(欧美)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">工作描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            在新加坡Income保险公司产险项目组做开发和支持任务，财务和代理人模块开发组。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2008/3-2010/6</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong class="txt3">软件工程师</strong><span class="p5">|</span><span>NEC&#x20;NCOS&#x20;&amp;&#x20;新致开发中心</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1" colspan="2">
+                                                <span>上海新致软件有限公司</span><span class="gray">&nbsp;[2年3个月]
+                    </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1 gray2" colspan="2">计算机软件<span class="p5">|</span>500-1000人<span
+                                                    class="p5">|</span>合资
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">工作描述：</td>
+                                                        <td valign="top" class="txt1">先后在NNC和金融事业部，政府事业部做开发</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                <tbody>
+                <tr>
+                    <td class="plate1">项目经验</td>
+                </tr>
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td class="p15">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2016/10-至今</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong>Event&#x20;Notification&#x20;Refactor</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">将老的Event&#x20;Notification重构。新的设计基于微服务架构，所有的服务之间通过Restful互相调用。新的重构基于Spring&#x20;boot,&#x20;Spring&#x20;cloud,&#x20;Spring&#x20;JPA&#x20;data,&#x20;Spring&#x20;mvc。并参与重新设计了新的数据库结构。开发新的基于Spring&#x20;Rest的Restful&#x20;API。<br>重写了所有新的前端页面，使用新的UI设计，使用Aurelia的前端框架，使用ES6语法实现所有的前端逻辑。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">参与重构开发</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2016/10-2017/3</td>
+                                            <td valign="top" class="rtbox"><strong>Final&#x20;Mile&#x20;App</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">所属公司：</td>
+                                                        <td valign="top" class="txt1">沃纳国际物流（上海）有限公司</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Final&#x20;Mile为沃纳的代理商在运送大件货物到客户手中的时候提供最后一公里的手机端解决方案。通过app,&#x20;代理商快递员在大件达到时候扫描货品，与客户沟通交付，如果信息吻合，客户无异议可以在app签字完成运送。如果在物品有损坏的情况，通过OS&amp;D可以与客户现场通过一些预制措施与客户尽可能达成新的协议，比如一定的折扣完成运送。<br>iOS&#x20;App是用Swift&#x20;3.0开发，适配iOS所有设备，支持横屏和竖屏显示。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">独立完成&#x20;iOS&#x20;app开发</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2015/8-2015/9</td>
+                                            <td valign="top" class="rtbox"><strong>i家园</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            家园是一个为社区居民提供的开门App，成为除IC卡之外的另外一个选项。<br>通过i家园，用户还可以邀约朋友，被邀约的朋友可以直接通过App开门直接进入小区，并可以导航到用户的家里。另外用户还可以通过App向物业保修，接受物业发送的小区通知等。App还集成了聊天和社交模块，用户自动分配到小区同一兴趣的群组里群聊，也可以单独加某一个邻居聊天。<br>App还集成O2O商城，为像e洗车，云家政等生活服务类App导流。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">带领团队制定进度，讨论需求，进度跟踪。<br>与同事完成开门模块开发。<br>独立完成聊天和社交模块，优惠券模块前端H5开发。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2014/10-2015/7</td>
+                                            <td valign="top" class="rtbox"><strong>Trailer&#x20;Inspection</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">所属公司：</td>
+                                                        <td valign="top" class="txt1">沃纳国际物流（上海）有限公司</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">这是一个为拖车检查员提供的iPad&#x20;App，用Swift1.2编写。通过Trailer&#x20;Inspection&#x20;App，检查员可以分别从前后左右检查拖车，通过简单的点击完成检查选项，如果有破损可以拍照，检查结束后用GRMustache模板引擎生成报告，发送到Apple&#x20;AirPrint打印。所有的检查数据异步存储到Core&#x20;Data，并由另外一个后台服务发送到服务端。项目主要用到的技术有Swift,&#x20;GA,&#x20;Flurry,&#x20;Fabric,&#x20;SwiftyJson,GRMustache.swift,&#x20;Java,&#x20;Restful&#x20;Web&#x20;services.</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">参与项目计划，需求讨论，编写代码。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2013/10-2014/10</td>
+                                            <td valign="top" class="rtbox"><strong>Routing&#x20;Guide</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Routing&#x20;Guide(RG)是Werner&#x20;Enterprise分布式系统组件之一，为Werner的客户配置路由规则，管理Lane，分配司机。项目中主要用到技术有&#x20;Java,&#x20;J2EE,&#x20;Maven,&#x20;JSP,&#x20;JQuery,&#x20;KnockoutJS,Struts2,&#x20;Hibernate,&#x20;EJB,JPA,&#x20;RestEasy,Swagger,&#x20;HTML5,&#x20;JMS,Shiro.ehcache.&#x20;JBoss&#x20;EAP6.Selenium,&#x20;Cucumber.</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">提出核心需求，整理文档，编写业务和测试代码。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2013/10-2014/10</td>
+                                            <td valign="top" class="rtbox"><strong>Event&#x20;Notification</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Event&#x20;Notification(EN)是Werner&#x20;Enterprise分布式系统组件之一，属于后台管理型web&#x20;application。通过EN，客户端可以订阅某一个事件，事件对应动态可配置的Event&#x20;Type，Event&#x20;Type中配置符合客户端需求的字段，当触发该Event的时候，后台Message&#x20;Driven&#x20;Bean会将Email和短信发送到符合订阅者过滤条件的客户端上。项目中主要用到技术有&#x20;Java,&#x20;J2EE,&#x20;Maven,&#x20;JSP,&#x20;JQuery,&#x20;KnockoutJS,Struts2,&#x20;Hibernate,&#x20;EJB,JPA,&#x20;RestEasy,Swagger,&#x20;HTML5,&#x20;JMS,Shiro.ehcache.&#x20;JBoss&#x20;EAP6,Selenium,&#x20;Cucumber.</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">提出核心需求，整理文档，编写业务和测试代码。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2013/3-至今</td>
+                                            <td valign="top" class="rtbox"><strong>IPWorks</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Eclipse(开发工具)<br>SUSE&#x20;linux(软件环境)IPWorks是一组IP协议子协议的实现，主要提供DNS,ENUM,DHCP,AAA,WIFI服务。Storage&#x20;Server为各模块提供集中数据库服务。Server&#x20;Manager管理各个模块的服务。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">MySQL&#x20;NDB,&#x20;InnoDB维护，IPWorks&#x20;web模块，Storage&#x20;server及server&#x20;manager模块维护。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2012/12-2013/3</td>
+                                            <td valign="top" class="rtbox"><strong>Web&#x20;Client&#x20;Enabler</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Eclipse(开发工具)<br>Java(软件环境)WCE是为IOS和Android的BCS客户端提供IM服务的server,支持HTTP协议。主要给企业级用户提供及时通讯，文件传输，在线状态，分组等功能。通过基于Jersey的RESTful&#x20;web&#x20;services与移动客户端进行交互。利用JAVA&#x20;NIO实现高并发的socket通讯。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">Jersey&#x20;web&#x20;services&#x20;接口开发。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2012/4-2012/12</td>
+                                            <td valign="top" class="rtbox"><strong>Mobility</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Eclipse(开发工具)<br>Sun&#x20;Blade(硬件环境)Mobility是一个位于IMS网络负责IMS与PSTN网络之间协议转换的分布式系统。主要有计数，License，PSTN网络电话与IMS软件电话转接（SIP协议与CAMEL协议转换），注册用户到CSCF等功能。<br>&#x20;&#x20;&#x20;这是一个基于J2EE，运行在Sun&#x20;GlassFish&#x20;Web&#x20;Server上的分布式的系统。提供用户数据的增删改查web&#x20;services&#x20;接口，数据保存到分布式的Mysql数据库，再用Quartz&#x20;Job将这些用户数据注册到IMS网络的CSCF上。当有Tcap的消息转接到mobility的时候，mobility将消息通过JCA存到SS7协议栈，将生产的correlation&#x20;Id存到Hazelcast(一种分布式的java.util.Map的实现)，并返回给请求方这个correlation&#x20;Id，完成一次握手后，请求方携带correlation&#x20;ID发起SIP请求，Mobility分析correlationId是否匹配，并将转接。<br>&#x20;&#x20;&#x20;主要应用到的技术有:Java,EJB,Spring,JPA,JCA,JMS,JMX,Quartz,SIP&#x20;Servlet。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            基于Agile/Scrum模式下的新功能开发，产品维护及客户支持。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2010/7-2011/3</td>
+                                            <td valign="top" class="rtbox"><strong>新加坡Income保险公司产险系统</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            Eclipse(开发工具)Income是新加坡最大的保险公司，eBao&#x20;Income团队为其提供寿险、产险及诸多系统的集成开发、测试、维护及数据迁移服务。其中产险系统集成了产险核心业务系统、理赔系统、Easy&#x20;port、DAS等诸多系统的一体化，而其中最为复杂的核心业务系统整合了新契约、续保、批改、财务、再保、理赔、代理人功能模块，并提供eBao革命化，智能化的风险评估，多途径分摊风险等思想。<br>&#x20;&#x20;&#x20;&#x20;通过易保特有的框架系统，提供单点登录、FMS、RMS、EMS等超强的业务可配置性功能模块。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">财务费用的操作历史报表功能，DAS集成系统财务模块（web&#x20;service)，电子收费模块，佣金发放功能以及财务操作报表的开发，并提供财务模块所有功能的bug修复,性能优化，以及迁移数据的支持，并配合业务人员为用户提供支持。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2009/11-2010/6</td>
+                                            <td valign="top" class="rtbox"><strong>IPTV&#x20;BOSS运营计费支撑系统</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Eclipse(开发工具)<br>struts&#x20;hibernate&#x20;spring(软件环境)它是为宽带中心提供的iptv和上网业务的运营和计费管理系统。计费体系包括:预付费、后付费、服务产品和计费策略的管理。运营系统包括：用户开户、销户、移机、换机、账户、客户、区域管理，还包括运营商和代理商的管理，包括开户过程中的工单管理，机顶盒管理，为各个功能提供可能需要的报表生成和日志记录功能，提供客服管理，为使用该管理系统提供角色和权限，部门和成员的管理。<br>&#x20;&#x20;&#x20;&#x20;&#x20;利用struts&#x20;spring&#x20;hibernate框架技术来实现WEB应用，计费则由数据库端提供各种计费功能的函数。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            IPTV用户管理、系统管理、业务管理模块的详细设计、代码编写和测试。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2009/5-2009/10</td>
+                                            <td valign="top" class="rtbox"><strong>基金托管在线客服门户系统</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Eclipse(开发工具)<br>Linux(软件环境)交通银行的基金托管在线客服系统，为基金托管的用户提供一个网上服务的平台。它是一个集成了所有服务的门户，共分公司行动、xbsl对账查询、报表系统、股东大会、在线帮助等模块组成；主要利用Jsp+EL+tag+JavaScript展现前台，利用Spring做系统架构基础，通过JDBC,JNDI,Hibernate等多种方式选择性连接数据库（DB2）,利用Webshpere作为WEB容器。整合newtouch&#x20;MVC框架，并结合JQuery+AJAX方式调用后台业务逻辑。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">报表订制、公司行动和在线帮助模块的详细设计、Coding和测试。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2008/7-2009/5</td>
+                                            <td valign="top" class="rtbox"><strong>Transport&#x20;Integration&#x20;EMS&#x20;Upper&#x20;Layer&#x20;IF</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Eclipse(开发工具)<br>WindowsXP(软件环境)为下位MS5000和上位系统提供CORBA的通讯接口，提供FM和CM和common&#x20;system&#x20;从MS5000到上位系统的转化，所有上位的标准必须满足TMF&#x20;MTNM分布式电信网络管理标准，提供Notification&#x20;service&#x20;为MS5000&#x20;提供发送和接受event通道，提供共通进行CORBA&#x20;interface的启动终了等相关操作；提供license管理系统。提供event的错误处理；该系统还需要为后期的系统提供接口，符合XML和SNMP通讯计划；提供从MS5000中每个NE字段到CORBA标准的字段转化，提供对上位系统request的错误处理的相应，提供内部错误处理机制；利用第三方JacORB缩短项目开发时间；利用Framework&#x20;模拟上位系统；
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            调研，Mapping管理，共通块代码编写，测试用例编写，性能测试代码编写。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2008/5-2008/7</td>
+                                            <td valign="top" class="rtbox"><strong>D3A&#x20;prototype</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            Eclipse(开发工具)接受从手机客户端传来的信息，为FS（front&#x20;server）提供展示信息列表，主要利用AJax,servelt,JSP技术，通过过滤器，提供可翻页的alarm信息列表。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">过滤、展示、页面编写，UT及性能测试。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2008/3-2008/5</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong>D3A&#x20;Common&#x20;IF&#x20;Stub</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">Eclipse(开发工具)<br>WindowsXP(软件环境)上位系统是在未开发出的庞大系统，为了模拟上位系统而做的模拟系统。主要利用xml和Java反射技术，配置详细的上位系统模块及其预想返回的正常或异常结果。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">xml读写操作，共通异常库模块的设计和coding。</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" class="box">
+                <tbody>
+                <tr>
+                    <td class="plate1">教育经历</td>
+                </tr>
+                <tr>
+                    <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td class="p15">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2002/9-2008/7</td>
+                                            <td valign="top" class="rtbox"><strong>东华大学</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">本科<span class="p5">|</span>计算机科学与技术</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                <tbody>
+                <tr>
+                    <td class="plate1">
+                        技能特长
+                        <span class="f12">（包括IT技能、语言能力、证书、成绩、培训经历）</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tbb">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tit">技能/语言</td>
+                            </tr>
+                            <tr>
+                                <td class="p15">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="tb2 cell" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">DB2</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">精通</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td class="tb2 cell" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">J2EE</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">精通</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb2 cell sl" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">Oracle</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">熟练</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td class="tb2 cell" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">OO</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">精通</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb2 cell" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">Java</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">精通</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td class="tb2 cell" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">英语</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">精通</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb2 cell yb" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">日语</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">一般</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tit">证书</td>
+                            </tr>
+                            <tr>
+                                <td class="tb3">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2007/7</td>
+                                            <td valign="top" class="rtbox"><strong class="txt3">大学英语四级</strong></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb3 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2006/6</td>
+                                            <td valign="top" class="rtbox"><strong class="txt3">IBM&#x20;UML认证</strong>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--<table cellspacing="0" cellpadding="0" border="0">-->
+                            <!--<tbody>-->
+                            <!--<tr>-->
+                                <!--<td class="tit">培训经历</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td class="p15">-->
+                                    <!--<table cellspacing="0" cellpadding="0" border="0">-->
+                                        <!--<tbody>-->
+                                        <!--<tr>-->
+                                            <!--<td valign="top" class="time">2006/3&#45;&#45;2006/9</td>-->
+                                            <!--<td valign="top" class="rtbox"><strong class="txt3">Core&#x20;Java&#x20;J2EE&#x20;SSH框架&#x20;Oracle&#x20;等</strong>-->
+                                            <!--</td>-->
+                                        <!--</tr>-->
+                                        <!--</tbody>-->
+                                    <!--</table>-->
+                                    <!--<table cellspacing="0" cellpadding="0" border="0">-->
+                                        <!--<tbody>-->
+                                        <!--<tr>-->
+                                            <!--<td class="tb2" valign="top">-->
+                                                <!--<table cellspacing="0" cellpadding="0" border="0">-->
+                                                    <!--<tbody>-->
+                                                    <!--<tr>-->
+                                                        <!--<td valign="top" class="keys">培训机构：</td>-->
+                                                        <!--<td valign="top" class="txt2">Tarena&#x20;corp.</td>-->
+                                                    <!--</tr>-->
+                                                    <!--</tbody>-->
+                                                <!--</table>-->
+                                            <!--</td>-->
+                                            <!--<td class="tb2" valign="top">-->
+                                                <!--<table cellspacing="0" cellpadding="0" border="0">-->
+                                                    <!--<tbody>-->
+                                                    <!--<tr>-->
+                                                        <!--<td valign="top" class="keys">培训地点：</td>-->
+                                                        <!--<td valign="top" class="txt2">人民广场科技京城</td>-->
+                                                    <!--</tr>-->
+                                                    <!--</tbody>-->
+                                                <!--</table>-->
+                                            <!--</td>-->
+                                        <!--</tr>-->
+                                        <!--</tbody>-->
+                                    <!--</table>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
+                <tbody>
+                <tr>
+                    <td class="plate1">附加信息</td>
+                </tr>
+                <tr>
+                    <td class="tbb">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tit">其他</td>
+                            </tr>
+                            <tr>
+                                <td class="p15">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="tb1">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">主题：</td>
+                                                        <td valign="top" class="txt3">推荐信</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="keys">主题描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            我的理想就是做一名出色的软件工程师，喜欢我的工作并有极高的热情。喜欢学习实用的新技术，乐于与同事分享经验，工作后一直从事Java后端，Web&#x20;Application和iOS&#x20;app开发并参与技术架构和系统架构的工作。
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
