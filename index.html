@@ -465,7 +465,7 @@
                                         </tr>
                                         <tr>
                                             <td valign="top" class="keys">职位：</td>
-                                            <td valign="top" class="txt2">高级软件工程师</td>
+                                            <td valign="top" class="txt2">架构师</td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="keys">公司：</td>
@@ -633,7 +633,7 @@
                                         <tr>
                                             <td valign="top" class="keys">职能/职位：</td>
                                             <td valign="top" class="txt2">
-                                                <span class="tag">高级软件工程师</span>
+                                                <span class="tag">架构师/Technical Leader/技术经理</span>
                                                 <span class="tag">&nbsp;&nbsp;Java&amp;iOS&amp;Android开发/Technical Leader/技术经理</span>
                                             </td>
                                         </tr>
@@ -936,7 +936,7 @@
                                         <tr>
                                             <td valign="top" class="time">2017/3-至今</td>
                                             <td valign="top" class="rtbox">
-                                                <strong>Drive Werner - Android</strong>
+                                                <strong>Drive Werner</strong>
                                             </td>
                                         </tr>
                                         <tr>
@@ -957,7 +957,7 @@
                                                     <tbody>
                                                     <tr>
                                                         <td valign="top" class="keys">项目描述：</td>
-                                                        <td valign="top" class="txt1">Drive Werner 是沃纳为司机提供的核心App，支持平板挂在卡车上，主要功能包含：<br>- Profile: 司机的基本信息，部门信息，上司信息等<br>- Maps: 地图模块，提供搜索功能查询司机的线路图，起点、中途、终点信息，加油站信息、Trailer位置信息等。<br>- Safety: 显示司机的安全里程数、Inspection记录、危险驾驶、违章信息等与安全相关的功能。<br>- Messages: 消息管理<br>- Pay: 司机的报酬模块，可以查询历史记录，当前Load的报酬详情。<br>- Loads: 这个是最核心的模块，为司机提供当前运货任务的详细信息，路由信息，运输途中会用到的文档查询，卡车或拖车的中途检查，Trip Envelop信息上传等。<br>- Werner News: 公司新闻分享。<br>- Replacement: 搜索查询线路转接，发布转接信息把自己当前的Load转手给别人，或者是接手别的司机的单子。<br>基于Android的MVVM模式，利用ViewModel做数据绑定，由Java和Kotlin混合开发，从技术角度并不是很复杂，基本都是基于Android的原生框架、按UI工程师提供的设计原型而开发。</td>
+                                                        <td valign="top" class="txt1">1. Drive Werner Service:<br>Drive Werner服务是为Drive Werner客户端提供所有的接口服务及业务支撑的服务项目，包含微服务有：<br>- Trip Service: 获取loads列表，Pick loads时向EN发Confirmation Code 事件触发SMS，输入确认接单。<br>- Maps Service: 从Werner GIS服务中获取加油站位置、POI信息等。<br>- Payroll Service: 从Werner OMS接口中获取。<br>- Messaging Service: 消息管理服务。<br>- CSA: 从TMS获取司机的车辆检测记录、违章记录、安全行驶距离、危险驾驶记录等。<br>- Driver Placement Service: 司机替换管理服务。<br>- 其他服务。<br><br>这个项目是基于Spring Cloud、Spring Boot、Docker的微服务架构，用到技术栈有: Spring、Spring Cloud Eureka、Spring Cloud Zuul、Hystrix、Feigh、Spring JPA data、Spring MVC，Bootstrap，Angular。依赖Rest Security 服务和 EN服务。<br><br>2. iOS &amp; Android:<br><br>Drive Werner 是沃纳为司机提供的核心App，支持平板挂在卡车上，主要功能包含：<br>- Profile: 司机的基本信息，部门信息，上司信息等<br>- Maps: 地图模块，提供搜索功能查询司机的线路图，起点、中途、终点信息，加油站信息、Trailer位置信息等。<br>- Safety: 显示司机的安全里程数、Inspection记录、危险驾驶、违章信息等与安全相关的功能。<br>- Messages: 消息管理<br>- Pay: 司机的报酬模块，可以查询历史记录，当前Load的报酬详情。<br>- Loads: 这个是最核心的模块，为司机提供当前运货任务的详细信息，路由信息，运输途中会用到的文档查询，卡车或拖车的中途检查，Trip Envelop信息上传等。<br>- Werner News: 公司新闻分享。<br>- Replacement: 司机替换管理。<br><br>Android:<br>基于Android的MVVM模式，利用ViewModel做数据绑定，由Java和Kotlin混合开发，基于Android的原生框架、按UI工程师提供的设计原型而开发。<br>iOS:<br>基于iOS的原生框架，用Swift语言开发。第三方用到的pods有：Alamofire、AlamofireImage、SwiftyJSON、Firebase、DrawerController、IQKeyboardManager、Material、MaterialComponents.</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -969,57 +969,7 @@
                                                     <tbody>
                                                     <tr>
                                                         <td valign="top" class="keys">责任描述：</td>
-                                                        <td valign="top" class="txt1">作为上海团队的核心开发领导参与功能迭代。</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p15">
-                                    <table cellspacing="0" cellpadding="0" border="0">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="time">2017/3-至今</td>
-                                            <td valign="top" class="rtbox">
-                                                <strong>Drive Werner - iOS</strong>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tb1" colspan="2">
-                                                <table cellspacing="0" cellpadding="0" border="0">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td valign="top" class="keys">所属公司：</td>
-                                                        <td valign="top" class="txt1">沃纳国际物流（上海）有限公司</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tb1" colspan="2">
-                                                <table cellspacing="0" cellpadding="0" border="0">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td valign="top" class="keys">项目描述：</td>
-                                                        <td valign="top" class="txt1">Drive Werner 是沃纳为司机提供的核心App，支持平板挂在卡车上，主要功能包含：<br>- Profile: 司机的基本信息，部门信息，上司信息等<br>- Maps: 地图模块，提供搜索功能查询司机的线路图，起点、中途、终点信息，加油站信息、Trailer位置信息等。<br>- Safety: 显示司机的安全里程数、Inspection记录、危险驾驶、违章信息等与安全相关的功能。<br>- Messages: 消息管理。<br>- Pay: 司机的报酬模块，可以查询历史记录，当前Load的报酬详情。<br>- Loads: 这个是最核心的模块，为司机提供当前运货任务的详细信息，路由信息，运输途中会用到的文档查询，卡车或拖车的中途检查，Trip Envelop信息上传等。<br>- Werner News: 公司新闻分享。<br>- Replacement: 搜索查询线路转接，发布转接信息把自己当前的Load转手给别人，或者是接手别的司机的单子。<br>基于iOS的原生框架，用Swift语言开发。第三方用到的pods有：Alamofire、AlamofireImage、SwiftyJSON、Firebase、DrawerController、IQKeyboardManager、Material、MaterialComponents</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tb1" colspan="2">
-                                                <table cellspacing="0" cellpadding="0" border="0">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td valign="top" class="keys">责任描述：</td>
-                                                        <td valign="top" class="txt1">作为上海团队的核心开发领导参与功能迭代。</td>
+                                                        <td valign="top" class="txt1">1. 参与后端的架构设计、核心功能开发、测试。<br>2. 参与iOS和Android App的迭代开发、测试。</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
