@@ -1,1 +1,15 @@
-# bluecitymoon.github.io
+- 12年项目开发经验，5年Team Leader经验。
+- 精通Java、Swift、Kotlin。了解Objective-C、Dart。
+- 精通Java后端开发、Web前端开发、iOS、Android原生App开发。
+- 有多个基于Spring Cloud的0到1新系统的分布式架构设计及搭建经验。
+- 熟悉Spring Cloud、Spring Cloud Config、Spring Cloud Eureka、Spring Cloud Zuul/gatewary、Feign、Spring Cloud Bus、 Spring Cloud Stream/AMQP、Spring Cloud Hystrix、ELK。了解Dubbo、Nacos、Sentinel、Setta。
+- 熟悉Spring及多种组件如Spring MVC、 Spring Boot、 Spring OAuth2、Spring JPA Data等，熟悉Hibernate、Mybatis、Struts、JSP，Restful、SOAP、Ehcache、Redis、RabbitMQ、Kafka。
+- 熟悉HTML5，CSS, Javascript, JQuery, AngularJS, Ionic, Cordova, Flutter.
+- 有基本的运维经验，精通Linux、Mac系统。
+- 有Docker、Tomcat、JBoss、Docker compose、Linux系统调优、JVM调优、MySQL调优的实际线上经验。
+- 了解Kubernetes、Openshift、DevOps。
+- 熟悉Oracle、DB2、MySQL、MSSQL、Postgre SQL。
+- 有物流[沃纳]、保险[易保、德泰]、银行[交行数据中心]、电信[爱立信]行业经验。
+- 流利英语口语能力，可用英文无障碍交流。
+- 对新技术饱有持续的热情，有快速学习的能力。
+- 性格开朗、幽默，善于调动团队气氛。
